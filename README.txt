@@ -14,9 +14,6 @@ Roll No :- 243501111
 4. Nishita Barthora
 Roll No :- 243501139
 
-5. Mayank Gehlot 
-Roll No :- 243501120
-
 Controls:
 Left Arrow  - Move Left
 Right Arrow - Move Right
