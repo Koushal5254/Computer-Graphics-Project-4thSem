@@ -14,6 +14,9 @@ Roll No :- 243501111
 4. Nishita Barthora
 Roll No :- 243501139
 
+5. Nandini Rankawat
+Roll No:- 243501136
+
 Controls:
 Left Arrow  - Move Left
 Right Arrow - Move Right

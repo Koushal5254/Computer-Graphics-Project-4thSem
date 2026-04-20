@@ -1,15 +1,13 @@
 import turtle
+import time
 from car import PlayerCar
 from enemy import EnemyCar
 from scoreboard import Scoreboard
-import time
-import random
 
-# Screen setup
 screen = turtle.Screen()
 screen.setup(width=600, height=600)
-screen.title("Car Racing Game")
 screen.bgcolor("black")
+screen.title("Car Racing Game")
 screen.tracer(0)
 
 player = PlayerCar()
@@ -21,9 +19,9 @@ screen.listen()
 screen.onkeypress(player.move_left, "Left")
 screen.onkeypress(player.move_right, "Right")
 
-game_is_on = True
+game_on = True
 
-while game_is_on:
+while game_on:
     time.sleep(0.05)
     screen.update()
 
@@ -32,9 +30,9 @@ while game_is_on:
 
     # Collision
     for car in enemy.all_enemies:
-        if car.distance(player) < 20:
+        if car.distance(player) < 25:
             score.game_over()
-            game_is_on = False
+            game_on = False
 
     score.increase()
 
